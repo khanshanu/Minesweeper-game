@@ -7,7 +7,7 @@ import storage from "redux-persist/lib/storage";
 import createSagaMiddleware from 'redux-saga'
 import rootReducer from "./reducers";
 
-let middlewares = [];
+// let middlewares = [];
 const sagaMiddleware = createSagaMiddleware()
 
 const persistConfig = {
@@ -18,12 +18,12 @@ const persistConfig = {
     ], // which reducer want to store
 };
 
-if (process.env.NODE_ENV === "development") {
-    const loggerMiddleware = createLogger();
-    middlewares = [...middlewares, loggerMiddleware];
-}
+// if (process.env.NODE_ENV === "development") {
+//     const loggerMiddleware = createLogger();
+//     middlewares = [...middlewares, loggerMiddleware];
+// }
 
-// middlewares.push(thunk);
+
 
 const devTools =
     process.env.NODE_ENV === "production"

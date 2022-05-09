@@ -1,5 +1,4 @@
 import React, {useCallback, useMemo} from 'react';
-import cn from 'classnames';
 import Panel from '../Panel';
 import Field from '../Field';
 // import Settings from '../Settings';
@@ -12,7 +11,7 @@ import style from './style.module.css';
 export default function Game() {
   const {
     settings,
-    setSettingsByLevel,
+  //  setSettingsByLevel,
     fields,
     onFieldOpen,
     fieldsOpened,
