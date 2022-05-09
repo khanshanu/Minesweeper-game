@@ -2,7 +2,7 @@ import React, {useCallback} from 'react';
 import cn from 'classnames';
 
 import Panel from '../Panel';
-import {settings} from '../../hooks/useSettings';
+import {settings} from '../../containers/useSettings';
 import {SettingsLevel} from '../../types';
 import style from './style.module.css';
 

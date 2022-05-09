@@ -19,9 +19,9 @@ export interface ISettings {
 
 export enum SettingsLevel {
   Beginner = 'Beginner',
-  Intermediate = 'Intermediate',
-  Expert = 'Expert',
-  SuperExpert = 'SuperExpert',
+  // Intermediate = 'Intermediate',
+  // Expert = 'Expert',
+  // SuperExpert = 'SuperExpert',
 }
 
 export enum GameState {

@@ -8,18 +8,18 @@ export const settings: ISettings[] = [
     yFieldsCount: 8,
     bombsCount: 10,
   },
-  {
-    level: SettingsLevel.Intermediate,
-    xFieldsCount: 16,
-    yFieldsCount: 16,
-    bombsCount: 40,
-  },
-  {
-    level: SettingsLevel.Expert,
-    xFieldsCount: 30,
-    yFieldsCount: 16,
-    bombsCount: 99,
-  },
+  // {
+  //   level: SettingsLevel.Intermediate,
+  //   xFieldsCount: 16,
+  //   yFieldsCount: 16,
+  //   bombsCount: 40,
+  // },
+  // {
+  //   level: SettingsLevel.Expert,
+  //   xFieldsCount: 30,
+  //   yFieldsCount: 16,
+  //   bombsCount: 99,
+  // },
 ];
 
 function getSettingsByLevel(level: SettingsLevel): ISettings {

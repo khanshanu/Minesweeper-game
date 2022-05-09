@@ -5,7 +5,7 @@ export default function App() {
   return (
     <main className={style.App}>
       <div className={style.container}>
-        <h1 className={style.title}>💣minesweeper</h1>
+        <h1 className={style.title}>minesweeper Game</h1>
         <Game />
       </div>
     </main>

@@ -2,9 +2,9 @@ import React, {useCallback, useMemo} from 'react';
 import cn from 'classnames';
 import Panel from '../Panel';
 import Field from '../Field';
-import Settings from '../Settings';
+// import Settings from '../Settings';
 import Statistics from '../Statistics';
-import useGameController from '../../hooks/useGameController';
+import useGameController from '../../containers/useGameController';
 import {GameState, SettingsLevel} from '../../types';
 
 import style from './style.module.css';
@@ -65,7 +65,7 @@ export default function Game() {
 
   return (
     <>
-      <Settings level={settings.level} onLevelChange={setSettingsByLevel} />
+      {/* <Settings level={settings.level} onLevelChange={setSettingsByLevel} /> */}
       <Panel className={style.Game}>
         <section className={style.fields} style={fieldsStyle}>
           {Array.from(fields.values()).map((field) => (
@@ -106,7 +106,7 @@ export default function Game() {
                 {pauseButtonLabel}
               </button>
             )}
-            <a
+            {/* <a
               href="https://github.com/adlite/minesweeper-react-typescript"
               className={cn(style.button, style.buttonGitHub)}
               target="_blank"
@@ -114,7 +114,7 @@ export default function Game() {
             >
               <img src="/assets/img/github.svg" alt="View source on GitHub" className={style.githubIcon} />
               View source
-            </a>
+            </a> */}
           </div>
         </aside>
       </Panel>

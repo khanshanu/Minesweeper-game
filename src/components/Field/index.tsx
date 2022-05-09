@@ -1,7 +1,6 @@
 import React, {useCallback} from 'react';
 import cn from 'classnames';
 import {GameState, IField} from '../../types';
-
 import style from './style.module.css';
 
 interface IProps {
@@ -64,7 +63,9 @@ function Field({field, isSmall, gameState, onOpen, onSetFlag, onDeleteFlag}: IPr
   );
 
   return (
-    <button className={classes} disabled={isDisabled} onClick={handleClick} onContextMenu={handleContextMenuClick}>
+    <button className={classes} disabled={isDisabled}
+     onClick={handleClick}
+      onContextMenu={handleContextMenuClick}>
       {label}
     </button>
   );
